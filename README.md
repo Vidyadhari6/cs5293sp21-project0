@@ -1,5 +1,5 @@
-#CS5293SP21-PROJECT0
-DEVELOPER: VIDYADHARI MADDUKURI
+# CS5293SP21-PROJECT0
+**DEVELOPER**: VIDYADHARI MADDUKURI
 
 This repository contains all required code base to execute project0 requirements.
 
