@@ -65,17 +65,9 @@ def populatedb(db, incidents_df):
     sql_conn = sqlite3.connect(db)
     c = sql_conn.cursor()
     try:
-        for x, row in incidents_df.iterrows():
-            c.execute("INSERT INTO incidents values (?,?,?,?,?)", (row['incident_time'],
-                                                                   row['incident_number'],
-                                                                   row['incident_location'],
-                                                                   row['nature'],
-                                                                   row['incident_ori']))
-        sql_conn.commit()
-        sql_conn.close()
+        incidents_df.to_sql('incidents', sql_conn, if_exists='replace', index = False)
         return True
     except Exception:
-        sql_conn.close()
         return False
 
 
