@@ -29,7 +29,10 @@ Following are the details of each function that is used in this project to extra
         d. To run a python process in pipenv virtual environment use **pipenv run** command.
 
 ## Running code
-    pipenv run python project0/main.py --incidents https://www.normanok.gov/sites/default/files/documents/2021-03/2021-03-01_daily_incident_summary.pdf
+    1. git clone git@github.com:Vidyadhari6/cs5293sp21-project0.git
+    2. cd cs5293sp21-project0/
+    3. git checkout tags/v1.0
+    4. pipenv run python project0/main.py --incidents https://www.normanok.gov/sites/default/files/documents/2021-03/2021-03-01_daily_incident_summary.pdf
 
 ## Running unit test
     pipenv run pytest
